@@ -1,0 +1,164 @@
+.appbar .active{
+    background-color: whitesmoke;
+    color: indigo;
+}
+.appbar .active:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+/* -------HOME STYLING-------- */
+
+
+.homebox{
+    margin-top: 25%;
+}
+.homebox .heading{
+   font-weight: 500;
+   letter-spacing: 3px;
+   line-height: 5rem;
+}
+.homebox .heading strong{
+    color: rgb(20, 54, 150);
+    padding-left: 3rem;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+.homebox .text{
+    padding-left: 1rem;
+    padding-top: .8rem;
+    letter-spacing: 2px;
+    padding-bottom: 3rem;
+}
+.homebox .btn{
+    margin-left: 5rem;
+    border-radius: 20px;
+}
+.homebox .btn:hover{
+    background-color:rgb(20, 54, 150);
+    transition-duration: 0.5s;
+    transform-style: preserve-3d;
+    font-weight: 700;
+    color: wheat;
+}
+.animatepic{
+    margin-top: 16%;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width:958px) {
+    .homebox{
+        text-align: center;
+    }
+    .animatepic{
+       margin-left: 32%;
+    }
+}
+@media (max-width:597px) {
+    .homebox .heading{
+        font-size: 40px;
+    }
+    .animatepic{
+        margin-left: 10%;
+    }
+}
+@media (max-width:493px) {
+    .homebox .heading{
+        font-size: 34px;
+    }
+    .animatepic{
+        margin-left: 0%;
+    }
+    .homebox .btn{
+        margin-left: 2rem;
+    }
+}
+
+
+
+
+
+/* --------CONTACT FORM----------- */
+
+
+.form{
+    width: 90%;
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+.form .input{
+    margin-bottom: 6%;
+    padding: 4px;
+}
+.form .input label{
+    font-size: 18px;
+}
+.formheading{
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+/* --------Services-------- */
+
+
+.service-heading{
+    padding-top: 1rem;
+    text-align: center;
+    border-bottom:  1px solid rgb(211, 211, 211);
+}
+#cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 28%;
+    box-shadow: 0 0 4px 3px pink;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.category, .price{
+font-weight: bold;
+text-transform: capitalize;
+margin: 8px;
+font-size: 1.2rem;
+}
+.images{
+    width: 80%;
+}
+
+@media(max-width:595px){
+    #cards{
+        flex-direction: column;
+        margin: 10%;
+    }
+    .card{
+        width: 80%;
+        margin: 10%;
+    }
+}
+@media(max-width:390px){
+    #cards{
+        flex-direction: column;
+        margin: 10%;
+    }
+    .card{
+        width: 80%;
+        margin: 10%;
+    }
+}
